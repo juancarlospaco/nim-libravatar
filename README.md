@@ -35,7 +35,7 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=9, default="404", baseUrl="ht
 # Libravatar App
 
 - This module is also a crossplatform command line terminal App.
-- Just compile and run it, compiles to a single file native binary executable of ~120Kb.
+- Just compile and run it, compiles to a single file 0-dependency native binary executable of ~120Kb.
 - Only takes 1 argument thats the email that you want the avatar from, filename will be the email.
 
 ```
