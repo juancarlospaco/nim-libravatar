@@ -47,12 +47,12 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
         <tr>
             <td>Upload size limit</td>
             <td> 10 MB</td>
-            <td> None</td>
+            <td> ???</td>
         </tr>
         <tr>
             <td>Image size (in pixels)</td>
-            <td> 1 to 512 (configurable)</td>
-            <td> <a href="http://blog.gravatar.com/2012/07/30/retina/">2048</a></td>
+            <td> 1 to 512</td>
+            <td> 2048</td>
         </tr>
         <tr>
             <td><strong>HTTPS</strong> support</td>
@@ -62,22 +62,22 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
         <tr>
             <td><strong>IPv6</strong> support</td>
             <td> Yes</td>
-            <td> &mdash;</td>
+            <td> No</td>
         </tr>
         <tr>
             <td>Supported email hashes</td>
-            <td> MD5 and <strong>SHA256</strong></td>
+            <td> MD5 and SHA256</td>
             <td> <a href="http://en.gravatar.com/site/faq/#answer-2-1">MD5 only</a></td>
         </tr>
         <tr>
             <td><strong>OpenID</strong> URL support</td>
             <td> Yes</td>
-            <td> &mdash;</td>
+            <td> No</td>
         </tr>
         <tr>
             <td>Redirection to Gravatar</td>
             <td> Yes</td>
-            <td> Not needed <img src="../smileys/smile.png" alt=":)" /></td>
+            <td> No</td>
         </tr>
         <tr>
             <td>Customizable default image</td>
@@ -86,43 +86,43 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
         </tr>
         <tr>
             <td>MPAA-style image ratings</td>
-            <td> G-rated only</td>
+            <td> G-Rated only</td>
             <td> Yes</td>
         </tr>
         <tr>
             <td>Text-based profile information</td>
-            <td> &mdash;</td>
+            <td> No</td>
             <td> Yes</td>
         </tr>
         <tr>
             <td><strong>Federation</strong> via DNS SRV records</td>
             <td> Yes</td>
-            <td> &mdash;</td>
+            <td> No</td>
         </tr>
         <tr>
             <td><strong>LDAP</strong> authentication</td>
             <td> Yes</td>
-            <td> &mdash;</td>
+            <td> No</td>
         </tr>
         <tr>
             <td><strong>OpenID</strong> authentication</td>
             <td> Yes</td>
-            <td> &mdash;</td>
+            <td> No</td>
         </tr>
         <tr>
             <td>Automatic photo <strong>importers</strong></td>
-            <td> <a href="../photo_importers/">Yes</a></td>
-            <td> &mdash;</td>
+            <td> Yes</td>
+            <td> No</td>
         </tr>
         <tr>
             <td>Translated user interface</td>
-            <td> <a href="https://translations.launchpad.net/libravatar">Yes</a></td>
-            <td> <a href="http://en.gravatar.com/site/translations/">Yes</a></td>
+            <td> Yes</td>
+            <td> Yes</td>
         </tr>
         <tr>
             <td>Account <strong>export</strong></td>
             <td> Yes</td>
-            <td> &mdash;</td>
+            <td> No</td>
         </tr>
         <tr>
             <td>Account <strong>deletion</strong></td>
@@ -130,14 +130,14 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
             <td> <a href="http://en.gravatar.com/site/faq/#answer-1-7">No</a></td>
         </tr>
         <tr>
-            <td>XMLRPC API</td>
-            <td> &mdash;</td>
+            <td>XML-RPC API</td>
+            <td> No</td>
             <td> Yes</td>
         </tr>
         <tr>
             <td>Libraries/plugins available</td>
-            <td> <a href="../libraries/">Some</a></td>
-            <td> <a href="http://en.gravatar.com/site/implement/images/libraries/">Lots</a></td>
+            <td> Yes</td>
+            <td> Yes</td>
         </tr>
         <tr>
             <td><strong>Free and Open Source software</strong></td>
@@ -146,12 +146,12 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
         </tr>
         <tr>
             <td>Distributed service</td>
-            <td> <a href="../run_a_mirror/">Community mirrors</a></td>
-            <td> Commercial CDN</td>
+            <td> Community mirrors</td>
+            <td> Commercial Proprietary</td>
         </tr>
         <tr>
             <td>Corporate owner</td>
-            <td> &mdash;</td>
+            <td> No</td>
             <td> <a href="http://automattic.com/">Automattic</a></td>
         </tr>
     </tbody>
