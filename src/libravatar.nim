@@ -27,5 +27,8 @@ runnableExamples:
   echo getLibravatarUrl(email="me@aaronsw.com")
   echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
 
-# when isMainModule:
-#   echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
+when isMainModule and defined(ssl):
+  {. passL: "-s", passC: "-flto -ffast-math -march=native" .}
+  import httpclient
+  from os import paramStr
+  newHttpClient().downloadFile(getLibravatarUrl(paramStr(1), size=128, default="404"), paramStr(1) & ".jpg")
