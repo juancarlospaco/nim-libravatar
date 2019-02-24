@@ -2,7 +2,7 @@
 
 Libravatar library for Nim, Gravatar alternative. Libravatar is an open source federated avatar api and service.
 
-![Libravatar](https://wiki.libravatar.org/description/gitorious_fmarier.png)
+![Libravatar](https://wiki.libravatar.org/description/profile_fmarier.png)
 
 
 # Features
