@@ -34,13 +34,15 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=9, default="404", baseUrl="ht
 
 # Libravatar App
 
-- This module is also a command line terminal App.
+- This module is also a crossplatform command line terminal App.
 - Just compile and run it, compiles to a single file native binary executable of ~120Kb.
 - Only takes 1 argument thats the email that you want the avatar from, filename will be the email.
 
 ```
 $ nim c -d:release -d:ssl libravatar.nim
 $ ./libravatar "me@aaronsw.com"
+$ file "me@aaronsw.com.jpg"
+me@aaronsw.com.jpg: JPEG image data, JFIF standard 1.0, resolution (DPI), density 96x96, segment length 16, precision 8, 128x128
 ```
 
 
