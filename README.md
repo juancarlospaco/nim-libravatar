@@ -30,9 +30,9 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=9, default="404", baseUrl="ht
 <table class="border">
     <thead>
         <tr>
-            <th></th>
-            <th> Libravatar</th>
-            <th> Gravatar</th>
+            <th>Feature</th>
+            <th>Libravatar</th>
+            <th>Gravatar</th>
         </tr>
     </thead>
     <tbody>
