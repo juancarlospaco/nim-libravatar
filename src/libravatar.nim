@@ -24,7 +24,8 @@ func getLibravatarUrl*(email: string, size: range[1..512] = 80, default="",
   result = baseUrl & getMD5(email.strip.toLowerAscii) & "?s=" & $size & "&d=" & d & f
 
 runnableExamples:
+  echo getLibravatarUrl(email="me@aaronsw.com")
   echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
 
-when isMainModule:
-  echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
+# when isMainModule:
+#   echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
