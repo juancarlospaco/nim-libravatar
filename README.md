@@ -19,7 +19,9 @@ Libravatar library for Nim, Gravatar alternative. Libravatar is an open source f
 # Use
 
 ```nim
+echo getLibravatarUrl(email="me@aaronsw.com")
 echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
+echo getLibravatarUrl(email="me@aaronsw.com", size=9, default="404", baseUrl="https://MyCustomFederatedServer.org/avatar/")
 ```
 
 
@@ -66,7 +68,7 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
         </tr>
         <tr>
             <td>Supported email hashes</td>
-            <td> MD5 and SHA256</td>
+            <td> MD5, SHA256</td>
             <td> <a href="http://en.gravatar.com/site/faq/#answer-2-1">MD5 only</a></td>
         </tr>
         <tr>
