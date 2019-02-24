@@ -92,8 +92,8 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=9, default="404", baseUrl="ht
             <td> Yes</td>
         </tr>
         <tr>
-            <td>MPAA-style image ratings</td>
-            <td> G-Rated only</td>
+            <td>MPAA-style image ratings (Adult Content, Nude, Porn)</td>
+            <td> G-Rated only (No Porn)</td>
             <td> Yes</td>
         </tr>
         <tr>
