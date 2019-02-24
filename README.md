@@ -42,7 +42,7 @@ echo getLibravatarUrl(email="me@aaronsw.com", size=9, default="404", baseUrl="ht
 $ nim c -d:release -d:ssl libravatar.nim
 $ ./libravatar "me@aaronsw.com"
 $ file "me@aaronsw.com.jpg"
-me@aaronsw.com.jpg: JPEG image data, JFIF standard 1.0, resolution (DPI), density 96x96, segment length 16, precision 8, 128x128
+me@aaronsw.com.jpg: JPEG image data, JFIF standard 1.0, resolution (DPI), precision 8, 128x128
 ```
 
 
