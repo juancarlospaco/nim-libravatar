@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "0.2.0"
 author        = "Juan Carlos"
 description   = "Libravatar library for Nim, Gravatar alternative. Libravatar is an open source free federated avatar api & service."
 license       = "PPL"
