@@ -8,7 +8,7 @@ const
   validDefaults = ["", "http://cdn.libravatar.org/nobody.png", "404", "mm", "mp",
                   "identicon", "monsterid", "wavatar", "retro", "robohash"]  ## Valid values for default.
 
-func getLibravatarUrl*(email: string, size: range[1..512] = 80, default="",
+func getLibravatarUrl*(email: string, size: range[1..512] = 100, default="robohash",
     forceDefault=false, baseUrl=libravatarApiUrl): string {.inline.} =
   ## https://wiki.libravatar.org/api & https://wiki.libravatar.org/features
   ## Federation supported passing ``baseUrl``, DNS server discovery is up to you.
@@ -21,7 +21,7 @@ func getLibravatarUrl*(email: string, size: range[1..512] = 80, default="",
   assert default in validDefaults, "Default must be one of " & $validDefaults & " but got: " & default
   let f = when defined(release): "" else: (if unlikely(forceDefault): "&f=y" else: "")
   let d = if unlikely(default != ""): "&d=" & default else: ""
-  result = baseUrl & getMD5(email.strip.toLowerAscii) & "?s=" & $size & "&d=" & d & f
+  result = baseUrl & getMD5(email.strip.toLowerAscii) & "?s=" & $size & d & f
 
 runnableExamples:
   echo getLibravatarUrl(email="me@aaronsw.com")
