@@ -6,7 +6,7 @@ const
   libravatarApiUrl =
     when defined(ssl): "https://seccdn.libravatar.org/avatar/" ## Libravatar API URL by Default (SSL).
     else:              "http://cdn.libravatar.org/avatar/"     ## Libravatar API URL by Default (No SSL).
-  validDefaults = ["", "http://cdn.libravatar.org/nobody.png", "404", "mm", "mp",
+  validDefaults = ["", "https://seccdn.libravatar.org/static/img/nobody/250.png", "404", "mm", "mp",
                   "identicon", "monsterid", "wavatar", "retro", "robohash"]  ## Valid values for default.
 
 proc getLibravatarUrl*(email: string, size: range[1..512] = 100, default="robohash",
