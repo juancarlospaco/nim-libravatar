@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.4.0"
+version       = "0.5.0"
 author        = "Juan Carlos"
 description   = "Libravatar library for Nim, Gravatar alternative. Libravatar is an open source free federated avatar api & service."
 license       = "PPL"
@@ -9,4 +9,4 @@ srcDir        = "src"
 
 # Dependencies
 
-requires "nim >= 0.20.0"
+requires "nim >= 1.0.0"
