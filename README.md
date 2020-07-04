@@ -5,7 +5,6 @@
 ![](https://img.shields.io/github/languages/top/juancarlospaco/nim-libravatar?style=for-the-badge)
 ![](https://img.shields.io/github/languages/count/juancarlospaco/nim-libravatar?logoColor=green&style=for-the-badge)
 ![](https://img.shields.io/github/stars/juancarlospaco/nim-libravatar?style=for-the-badge "Star nim-libravatar on GitHub!")
-![](https://img.shields.io/maintenance/yes/2019?style=for-the-badge "2019")
 ![](https://img.shields.io/github/languages/code-size/juancarlospaco/nim-libravatar?style=for-the-badge)
 ![](https://img.shields.io/github/issues-raw/juancarlospaco/nim-libravatar?style=for-the-badge "Bugs")
 ![](https://img.shields.io/github/issues-pr-raw/juancarlospaco/nim-libravatar?style=for-the-badge "PRs")
