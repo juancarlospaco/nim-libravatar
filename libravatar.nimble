@@ -1,4 +1,4 @@
-version       = "0.5.0"
+version       = "0.5.5"
 author        = "Juan Carlos"
 description   = "Libravatar library for Nim, Gravatar alternative. Libravatar is an open source free federated avatar api & service."
 license       = "MIT"
