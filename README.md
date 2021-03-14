@@ -8,7 +8,6 @@
 ![](https://img.shields.io/github/languages/code-size/juancarlospaco/nim-libravatar?style=for-the-badge)
 ![](https://img.shields.io/github/issues-raw/juancarlospaco/nim-libravatar?style=for-the-badge "Bugs")
 ![](https://img.shields.io/github/issues-pr-raw/juancarlospaco/nim-libravatar?style=for-the-badge "PRs")
-![](https://img.shields.io/github/commit-activity/y/juancarlospaco/nim-libravatar?style=for-the-badge)
 ![](https://img.shields.io/github/last-commit/juancarlospaco/nim-libravatar?style=for-the-badge "Commits")
 
 # Features
