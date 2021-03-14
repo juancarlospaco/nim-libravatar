@@ -1,9 +1,8 @@
-from strutils import toLowerAscii, strip
 from md5 import getMD5
 
-
-template getLibravatarUrl*(email: string, size: range[1..512] = 100, default = "robohash", forceDefault = false,
-    baseUrl = (when defined(ssl): "https://seccdn.libravatar.org/avatar/" else: "http://cdn.libravatar.org/avatar/")): string =
+proc getLibravatarUrl*(email: var string, size: range[1..512] = 100,
+    default: static[string] = "robohash", forceDefault: static[bool] = false,
+    baseUrl: static[string] = (when defined(ssl): "https://seccdn.libravatar.org/avatar/" else: "http://cdn.libravatar.org/avatar/")) =
   ## https://wiki.libravatar.org/api & https://wiki.libravatar.org/features
   ## Federation supported passing ``baseUrl``, DNS server discovery is up to you.
   ## Nim being compiled, dont need a hardcoded DNS dig at Runtime in this function,
@@ -16,19 +15,27 @@ template getLibravatarUrl*(email: string, size: range[1..512] = 100, default = "
   assert email.len < 255, "email must be <255 characters long string"
   assert '@' in email, "email must be a valid standard email address string"
   assert baseUrl.len > 5, "baseUrl must be a valid HTTP URL string"
-  (baseUrl & getMD5(email.strip.toLowerAscii) & "?s=" & $size &
-    (if unlikely(default != ""): "&d=" & default else: "") &
-    (when defined(release): "" else: (if unlikely(forceDefault): "&f=y" else: ""))
-  )
+  email = baseUrl & getMD5(email)
+  email.add '?'
+  email.add 's'
+  email.add '='
+  email.add $size
+  email.add (when default != "": "&d=" & default else: "")
+  email.add (when defined(release): "" else: (when forceDefault: "&f=y" else: ""))
 
 
 runnableExamples:
-  echo getLibravatarUrl(email = "me@aaronsw.com")
-  echo getLibravatarUrl(email = "me@aaronsw.com", size = 512, default = "monsterid")
+  var email = "me@aaronsw.com"
+  getLibravatarUrl(email)
+  echo email
+  email = "me@aaronsw.com"
+  getLibravatarUrl(email, size = 512, default = "monsterid")
+  echo email
 
 
 when isMainModule and defined(ssl):
-  {.passL: "-s", passC: "-flto -ffast-math -march=native -mtune=native".}
   import httpclient
   from os import paramStr
-  newHttpClient().downloadFile(getLibravatarUrl(paramStr(1), size = 128, default = "404"), paramStr(1) & ".jpg")
+  var email = paramStr(1)
+  getLibravatarUrl(email, size = 128, default = "404")
+  newHttpClient().downloadFile(email, paramStr(1) & ".jpg")
