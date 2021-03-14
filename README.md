@@ -33,9 +33,15 @@
 
 ```nim
 import libravatar
-echo getLibravatarUrl(email="me@aaronsw.com")
-echo getLibravatarUrl(email="me@aaronsw.com", size=512, default="monsterid")
-echo getLibravatarUrl(email="me@aaronsw.com", size=9, default="404", baseUrl="https://MyCustomFederatedServer.org/avatar/")
+var email = "me@aaronsw.com"
+getLibravatarUrl(email)
+echo email
+email = "me@aaronsw.com"
+getLibravatarUrl(email, size=512, default="monsterid")
+echo email
+email = "me@aaronsw.com"
+getLibravatarUrl(email, size=9, default="404", baseUrl="https://MyCustomFederatedServer.org/avatar/")
+echo email
 ```
 
 
